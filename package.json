@@ -1,0 +1,24 @@
+{
+  "name": "redis-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:build": "tsc -w",
+    "dev:start": "nodemon ./dist/index.ts",
+    "dev": "concurrently \"npm run dev:build\" \"npm run dev:start\""
+  },
+  "author": "james",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "redis": "^3.1.2",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.3.4"
+  }
+}
