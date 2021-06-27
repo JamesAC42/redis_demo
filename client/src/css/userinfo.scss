@@ -1,0 +1,22 @@
+.user-info {
+    padding:10px;
+    border:1px solid rgb(59, 67, 112);
+    border-radius:10px;
+    box-shadow: 0px 4px 12px 0px #000000;
+    background:rgb(21, 22, 32);
+    .user {
+        font-family:Montserrat,"Helvetica Neue",Helvetica;
+        margin:25px 15px;
+        width:200px;
+        .user-id {
+            color:rgb(121, 121, 121);
+            font-size:18px;
+        }
+        .user-name,
+        .message-count {
+            color:rgb(206, 206, 206);
+            font-size:16px;
+            text-align:right;
+        }
+    }
+}

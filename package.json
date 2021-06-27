@@ -6,12 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:build": "tsc -w",
-    "dev:start": "nodemon ./dist/index.ts",
+    "dev:start": "concurrently \"nodemon ./dist/index.js\" \"nodemon ./dist/data.js\"",
     "dev": "concurrently \"npm run dev:build\" \"npm run dev:start\""
   },
   "author": "james",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "redis": "^3.1.2",
     "socket.io": "^4.1.2"
